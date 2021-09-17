@@ -1,0 +1,206 @@
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+   -webkit-overflow-scrolling: touch;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+}
+body{
+  font-family: 'Manrope', sans-serif;
+
+}
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px white;
+        border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #eaeaea;
+    border-radius: 10px;
+}
+input[type="file"]{
+  display: none;
+}
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="search"]{
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  width: 80%;
+  height: 40px;
+  background: #F6F6F6;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.SX01-TARJETA{
+  width: 500px;
+  padding: 10px;
+  overflow: hidden;
+  height: 90vh;
+}
+.DX01-SX01-TARJETA{
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000PX;
+  z-index: 2;
+  height: 260px;
+  border-radius: 10px;
+
+}
+.DS01-DX01-SX01-TARJETA, .DS02-DX01-SX01-TARJETA{
+  position: absolute;
+  background: black;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 260px;
+  border-radius: 15px;
+  transform-style: preserve-3d;
+  transition: 1s;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+  letter-spacing: 3PX;
+  font-size: 14PX;
+  overflow: hidden;
+  color: #5A5A5A;
+  font-weight: 700;
+  padding: 10px;
+}
+.DS01-DX01-SX01-TARJETA{
+
+}
+.DX01-SX01-TARJETA:hover .DS01-DX01-SX01-TARJETA {
+ transform: rotateY(180deg);
+}
+.DS02-DX01-SX01-TARJETA {
+ transform: rotateY(180deg);
+}
+.DX01-SX01-TARJETA:hover .DS02-DX01-SX01-TARJETA {
+ transform: rotateY(360deg);
+}
+.DS03-DS03-DS01-DX01-SX01-TARJETA{
+  display: flex;
+  align-items: center;
+}
+.DC01-DS03-DS03-DS01-DX01-SX01-TARJETA,
+.DC02-DS03-DS03-DS01-DX01-SX01-TARJETA{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.DC01-DS03-DS03-DS01-DX01-SX01-TARJETA{
+  background: orange;
+}
+.DC02-DS03-DS03-DS01-DX01-SX01-TARJETA{
+  background: rgba(255, 0 , 0 , 0.76);
+  opacity: 1.1;
+  position: absolute;
+  margin-left: -25px;
+}
+.DS01-DS01-DX01-SX01-TARJETA{
+  display: flex;
+  align-items: center;
+}
+.DC01-DS01-DS01-DX01-SX01-TARJETA{
+  height: 50px;
+  width: 70px;
+  border-radius: 5px;
+}
+.DC02-DS01-DS01-DX01-SX01-TARJETA{
+  width: 70px;
+  border-radius: 5px;
+  display: flex;
+  margin-left: auto;
+}
+.DC01-DS01-DS01-DX01-SX01-TARJETA img,
+.DC02-DS01-DS01-DX01-SX01-TARJETA img{
+ width: 100%;
+ border-radius: 10PX;
+}
+.DC02-DS02-DS01-DX01-SX01-TARJETA{
+  margin-top: 20px;
+}
+.DC02-DS02-DS01-DX01-SX01-TARJETA span{
+  letter-spacing: 20px;
+  font-size: 18px;
+  color: white;
+}
+.DS03-DS01-DX01-SX01-TARJETA{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.DC02-DS01-DS03-DS01-DX01-SX01-TARJETA{
+  height: 20px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.DC01-DS02-DS03-DS01-DX01-SX01-TARJETA{
+  font-size: 13px;
+}
+.DC02-DS02-DS03-DS01-DX01-SX01-TARJETA{
+  height: 20px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  text-align: center;
+  color: white;
+}
+.DC01-DS02-DX01-SX01-TARJETA{
+  height: 50px;
+  background: #191919;
+}
+.DC02-DS01-DS03-DS01-DX01-SX01-TARJETA{
+  color: white;
+}
+.DC01-DS01-DS03-DS01-DX01-SX01-TARJETA, .DC01-DS02-DS03-DS01-DX01-SX01-TARJETA{
+  margin-bottom: 10px;
+}
+
+input[type="checkbox" i] {
+  accent-color:red;
+-webkit-writing-mode: horizontal-tb !important;
+font-style: ;
+font-variant-ligatures: ;
+font-variant-caps: ;
+font-variant-numeric: ;
+font-variant-east-asian: ;
+font-weight: ;
+font-stretch: ;
+font-size: ;
+font-family: ;
+text-rendering: auto;
+color: -internal-light-dark(black, white);
+letter-spacing: normal;
+word-spacing: normal;
+line-height: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+display: inline-block;
+text-align: start;
+appearance: auto;
+-webkit-rtl-ordering: logical;
+cursor: pointer;
+background-color: -internal-light-dark red, rgb(59, 59, 59));
+margin: 0em;
+padding: 1px 2px;
+border-width: 2px;
+border-style: inset;
+border-color: -internal-light-dark red, red;
+border-image: initial;
+border-radius: 100px;
+}
